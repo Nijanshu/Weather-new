@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <style>
+        body{
+            background-image: url('https://www.treehugger.com/thmb/UAPpPw6U81pKrsW4pdvi3BKbD-g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-474218822-b4b9e73a3e3e4291a7d17d7db9c34341.jpg');
+            background-repeat: no-repeat;
+    background-position: center ;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.box{
+    background-color: rgb(1 2 26 / 97%) ;
+    color: aliceblue;
+    padding: 20px;
+        border: 2px solid black;
+        border-radius: 20px;
+        width: fit-content;
+    }
+    .details{
+        font-size: x-large;;
+    }
+    .info{
+        padding:2px;
+        font-size: larger;
+    }
+    .icon{
+        display: flex;
+    }
+    </style>
+</head>
+<body >
+    <h1>WeatherSite</h1>
+    <div class="box">
+
+   <section id="content">
+      <span class="dt" id="date"><span id="dat"></span></span> ||
+      <span class="dt" id="time"><Timespan id="clock"></Timespan> </span>
+   </section>
+   <section id="s2">
+      <p class="details">
+          <div id="name" class="info">City</div>
+       <input id="city"> <button id="btn" onclick="query()">Submit</button>
+      <div id="icon" class="info"></div>
+      <div id="desc" class="info"></div>
+      <!-- <div id="ltd">Latitude: <span id="lat">   </span>&nbsp;&nbsp; Longtitude: <span id='lon'></span></div>
+      <div id="tz">TimeZone: <span id="TZ"></span></div> -->
+   <div id="tmpr" class="info"> Temperature: <span id="ttp"> </span></div>
+   <div id="humid" class="info"> Humidity: <span id="humidity"> </span></div>
+   <div id="feel" class="info"> Feels like: <span id="fl"> </span></div>
+
+      </p>
+</section>
+</div>
+
+<script src="weather.js"></script>
+</body>
+</html>
+   
